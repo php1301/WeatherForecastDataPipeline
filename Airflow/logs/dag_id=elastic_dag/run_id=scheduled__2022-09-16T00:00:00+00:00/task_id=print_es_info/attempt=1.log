@@ -1,0 +1,26 @@
+[2022-09-17 15:38:37,878] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: elastic_dag.print_es_info scheduled__2022-09-16T00:00:00+00:00 [queued]>
+[2022-09-17 15:38:37,934] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: elastic_dag.print_es_info scheduled__2022-09-16T00:00:00+00:00 [queued]>
+[2022-09-17 15:38:37,937] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-17 15:38:37,937] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-09-17 15:38:37,937] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-17 15:38:38,092] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): print_es_info> on 2022-09-16 00:00:00+00:00
+[2022-09-17 15:38:38,116] {standard_task_runner.py:52} INFO - Started process 117 to run task
+[2022-09-17 15:38:38,130] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'elastic_dag', 'print_es_info', 'scheduled__2022-09-16T00:00:00+00:00', '--job-id', '41', '--raw', '--subdir', 'DAGS_FOLDER/elastic_dag.py', '--cfg-path', '/tmp/tmpmasd1ez1', '--error-file', '/tmp/tmp8fd9p_gr']
+[2022-09-17 15:38:38,133] {standard_task_runner.py:80} INFO - Job 41: Subtask print_es_info
+[2022-09-17 15:38:38,323] {task_command.py:369} INFO - Running <TaskInstance: elastic_dag.print_es_info scheduled__2022-09-16T00:00:00+00:00 [running]> on host 5912b12d7517
+[2022-09-17 15:38:38,886] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=elastic_dag
+AIRFLOW_CTX_TASK_ID=print_es_info
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-16T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-16T00:00:00+00:00
+[2022-09-17 15:38:38,910] {base.py:68} INFO - Using connection ID 'elastic_default' for task execution.
+[2022-09-17 15:38:41,769] {base.py:271} INFO - GET http://elastic:9200/ [status:200 request:2.857s]
+[2022-09-17 15:38:41,770] {logging_mixin.py:115} INFO - {'name': '0667c7027e95', 'cluster_name': 'docker-cluster', 'cluster_uuid': 'G4FzXSInQPmypGqUTughew', 'version': {'number': '8.3.3', 'build_flavor': 'default', 'build_type': 'docker', 'build_hash': '801fed82df74dbe537f89b71b098ccaff88d2c56', 'build_date': '2022-07-23T19:30:09.227964828Z', 'build_snapshot': False, 'lucene_version': '9.2.0', 'minimum_wire_compatibility_version': '7.17.0', 'minimum_index_compatibility_version': '7.0.0'}, 'tagline': 'You Know, for Search'}
+[2022-09-17 15:38:41,770] {python.py:173} INFO - Done. Returned value was: None
+[2022-09-17 15:38:41,795] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=elastic_dag, task_id=print_es_info, execution_date=20220916T000000, start_date=20220917T153837, end_date=20220917T153841
+[2022-09-17 15:38:42,894] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-09-17 15:38:42,938] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

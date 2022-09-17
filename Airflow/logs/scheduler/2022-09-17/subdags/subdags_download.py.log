@@ -1,0 +1,648 @@
+[2022-09-17 14:17:40,979] {processor.py:153} INFO - Started process (PID=545) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:17:40,980] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:17:40,981] {logging_mixin.py:115} INFO - [2022-09-17 14:17:40,981] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:17:40,988] {logging_mixin.py:115} INFO - [2022-09-17 14:17:40,986] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 6
+    with DAG("{f("{}")}")
+                  ^
+SyntaxError: invalid syntax
+[2022-09-17 14:17:40,988] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:17:41,010] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.035 seconds
+[2022-09-17 14:17:54,094] {processor.py:153} INFO - Started process (PID=559) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:17:54,094] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:17:54,095] {logging_mixin.py:115} INFO - [2022-09-17 14:17:54,095] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:17:54,097] {logging_mixin.py:115} INFO - [2022-09-17 14:17:54,096] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 6
+    with DAG(f""{}")}")
+                ^
+SyntaxError: invalid syntax
+[2022-09-17 14:17:54,097] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:17:54,116] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.026 seconds
+[2022-09-17 14:17:55,100] {processor.py:153} INFO - Started process (PID=560) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:17:55,101] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:17:55,103] {logging_mixin.py:115} INFO - [2022-09-17 14:17:55,101] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:17:55,106] {logging_mixin.py:115} INFO - [2022-09-17 14:17:55,105] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 6
+    with DAG(f"{}")}")
+                   ^
+SyntaxError: invalid syntax
+[2022-09-17 14:17:55,107] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:17:55,131] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.035 seconds
+[2022-09-17 14:17:57,145] {processor.py:153} INFO - Started process (PID=561) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:17:57,146] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:17:57,147] {logging_mixin.py:115} INFO - [2022-09-17 14:17:57,147] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:17:57,149] {logging_mixin.py:115} INFO - [2022-09-17 14:17:57,148] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 6
+    with DAG(f"{}"")
+                   ^
+SyntaxError: EOL while scanning string literal
+[2022-09-17 14:17:57,149] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:17:57,168] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.028 seconds
+[2022-09-17 14:17:59,160] {processor.py:153} INFO - Started process (PID=562) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:17:59,161] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:17:59,162] {logging_mixin.py:115} INFO - [2022-09-17 14:17:59,161] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:17:59,164] {logging_mixin.py:115} INFO - [2022-09-17 14:17:59,163] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 6
+    with DAG(f"{}")
+                  ^
+SyntaxError: invalid syntax
+[2022-09-17 14:17:59,164] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:17:59,200] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.043 seconds
+[2022-09-17 14:18:06,211] {processor.py:153} INFO - Started process (PID=572) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:18:06,212] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:18:06,212] {logging_mixin.py:115} INFO - [2022-09-17 14:18:06,212] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:18:06,217] {logging_mixin.py:115} INFO - [2022-09-17 14:18:06,217] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 6
+    with DAG(f"{parent_dag_id}")
+                               ^
+SyntaxError: invalid syntax
+[2022-09-17 14:18:06,218] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:18:06,238] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.032 seconds
+[2022-09-17 14:18:11,239] {processor.py:153} INFO - Started process (PID=573) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:18:11,240] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:18:11,240] {logging_mixin.py:115} INFO - [2022-09-17 14:18:11,240] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:18:11,243] {logging_mixin.py:115} INFO - [2022-09-17 14:18:11,242] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 6
+    with DAG(f"{parent_dag_id}.{child_dag_id}")
+                                              ^
+SyntaxError: invalid syntax
+[2022-09-17 14:18:11,243] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:18:11,273] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.037 seconds
+[2022-09-17 14:18:21,346] {processor.py:153} INFO - Started process (PID=587) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:18:21,347] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:18:21,356] {logging_mixin.py:115} INFO - [2022-09-17 14:18:21,356] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:18:21,362] {logging_mixin.py:115} INFO - [2022-09-17 14:18:21,360] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 6
+    with DAG(f"{parent_dag_id}.{child_dag_id}",)
+                                               ^
+SyntaxError: invalid syntax
+[2022-09-17 14:18:21,363] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:18:21,457] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.123 seconds
+[2022-09-17 14:18:36,402] {processor.py:153} INFO - Started process (PID=603) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:18:36,403] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:18:36,403] {logging_mixin.py:115} INFO - [2022-09-17 14:18:36,403] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:18:36,405] {logging_mixin.py:115} INFO - [2022-09-17 14:18:36,404] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 7
+    start)
+         ^
+SyntaxError: invalid syntax
+[2022-09-17 14:18:36,405] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:18:36,426] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.028 seconds
+[2022-09-17 14:18:39,414] {processor.py:153} INFO - Started process (PID=606) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:18:39,419] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:18:39,419] {logging_mixin.py:115} INFO - [2022-09-17 14:18:39,419] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:18:39,422] {logging_mixin.py:115} INFO - [2022-09-17 14:18:39,420] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 7
+    start_date=)
+               ^
+SyntaxError: invalid syntax
+[2022-09-17 14:18:39,422] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:18:39,460] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.051 seconds
+[2022-09-17 14:18:51,121] {processor.py:153} INFO - Started process (PID=619) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:18:51,122] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:18:51,123] {logging_mixin.py:115} INFO - [2022-09-17 14:18:51,123] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:18:51,127] {logging_mixin.py:115} INFO - [2022-09-17 14:18:51,126] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 8
+    )
+    ^
+SyntaxError: invalid syntax
+[2022-09-17 14:18:51,127] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:18:51,212] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.103 seconds
+[2022-09-17 14:18:58,255] {processor.py:153} INFO - Started process (PID=621) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:18:58,256] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:18:58,256] {logging_mixin.py:115} INFO - [2022-09-17 14:18:58,256] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:18:58,258] {logging_mixin.py:115} INFO - [2022-09-17 14:18:58,258] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 8
+    )
+    ^
+SyntaxError: invalid syntax
+[2022-09-17 14:18:58,259] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:18:58,284] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.033 seconds
+[2022-09-17 14:19:00,267] {processor.py:153} INFO - Started process (PID=631) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:19:00,267] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:19:00,268] {logging_mixin.py:115} INFO - [2022-09-17 14:19:00,268] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:19:00,270] {logging_mixin.py:115} INFO - [2022-09-17 14:19:00,269] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 9
+    )
+    ^
+SyntaxError: invalid syntax
+[2022-09-17 14:19:00,270] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:19:00,290] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.027 seconds
+[2022-09-17 14:19:14,339] {processor.py:153} INFO - Started process (PID=641) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:19:14,340] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:19:14,340] {logging_mixin.py:115} INFO - [2022-09-17 14:19:14,340] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:19:14,344] {logging_mixin.py:115} INFO - [2022-09-17 14:19:14,342] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 9
+    )
+    ^
+SyntaxError: invalid syntax
+[2022-09-17 14:19:14,345] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:19:14,378] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.045 seconds
+[2022-09-17 14:19:23,439] {processor.py:153} INFO - Started process (PID=655) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:19:23,440] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:19:23,440] {logging_mixin.py:115} INFO - [2022-09-17 14:19:23,440] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:19:23,444] {logging_mixin.py:115} INFO - [2022-09-17 14:19:23,443] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 10
+    )
+    ^
+SyntaxError: invalid syntax
+[2022-09-17 14:19:23,444] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:19:23,484] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.050 seconds
+[2022-09-17 14:19:30,504] {processor.py:153} INFO - Started process (PID=656) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:19:30,504] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:19:30,505] {logging_mixin.py:115} INFO - [2022-09-17 14:19:30,505] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:19:30,513] {logging_mixin.py:115} INFO - [2022-09-17 14:19:30,512] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 10
+    )
+    ^
+SyntaxError: invalid syntax
+[2022-09-17 14:19:30,514] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:19:30,557] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.072 seconds
+[2022-09-17 14:19:40,542] {processor.py:153} INFO - Started process (PID=665) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:19:40,543] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:19:40,543] {logging_mixin.py:115} INFO - [2022-09-17 14:19:40,543] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:19:40,546] {logging_mixin.py:115} INFO - [2022-09-17 14:19:40,545] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 9
+    catchup = args['catchup']
+            ^
+SyntaxError: invalid syntax
+[2022-09-17 14:19:40,555] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:19:40,615] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.076 seconds
+[2022-09-17 14:19:51,690] {processor.py:153} INFO - Started process (PID=678) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:19:51,695] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:19:51,696] {logging_mixin.py:115} INFO - [2022-09-17 14:19:51,695] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:19:51,699] {logging_mixin.py:115} INFO - [2022-09-17 14:19:51,698] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 10
+    )
+    ^
+SyntaxError: invalid syntax
+[2022-09-17 14:19:51,702] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:19:51,788] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.102 seconds
+[2022-09-17 14:20:07,858] {processor.py:153} INFO - Started process (PID=689) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:20:07,859] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:20:07,859] {logging_mixin.py:115} INFO - [2022-09-17 14:20:07,859] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:20:07,863] {logging_mixin.py:115} INFO - [2022-09-17 14:20:07,861] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 10
+    ) as dag
+           ^
+SyntaxError: invalid syntax
+[2022-09-17 14:20:07,863] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:20:07,892] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.038 seconds
+[2022-09-17 14:20:33,497] {processor.py:153} INFO - Started process (PID=720) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:20:33,497] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:20:33,498] {logging_mixin.py:115} INFO - [2022-09-17 14:20:33,498] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:20:33,500] {logging_mixin.py:115} INFO - [2022-09-17 14:20:33,500] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 10
+    ) as dag
+           ^
+SyntaxError: invalid syntax
+[2022-09-17 14:20:33,502] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:20:33,530] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.039 seconds
+[2022-09-17 14:20:43,573] {processor.py:153} INFO - Started process (PID=730) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:20:43,574] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:20:43,574] {logging_mixin.py:115} INFO - [2022-09-17 14:20:43,574] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:20:43,577] {logging_mixin.py:115} INFO - [2022-09-17 14:20:43,576] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 10
+    ) as dag
+           ^
+SyntaxError: invalid syntax
+[2022-09-17 14:20:43,577] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:20:43,603] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.033 seconds
+[2022-09-17 14:21:13,986] {processor.py:153} INFO - Started process (PID=753) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:21:13,990] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:21:13,992] {logging_mixin.py:115} INFO - [2022-09-17 14:21:13,990] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:21:13,995] {logging_mixin.py:115} INFO - [2022-09-17 14:21:13,994] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 10
+    ) as dag
+           ^
+SyntaxError: invalid syntax
+[2022-09-17 14:21:13,995] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:21:14,019] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.036 seconds
+[2022-09-17 14:21:16,006] {processor.py:153} INFO - Started process (PID=754) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:21:16,007] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:21:16,009] {logging_mixin.py:115} INFO - [2022-09-17 14:21:16,007] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:21:16,011] {logging_mixin.py:115} INFO - [2022-09-17 14:21:16,010] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 11
+    download_a = BashOperator(
+             ^
+IndentationError: expected an indented block
+[2022-09-17 14:21:16,012] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:21:16,050] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.047 seconds
+[2022-09-17 14:21:30,438] {processor.py:153} INFO - Started process (PID=777) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:21:30,438] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:21:30,439] {logging_mixin.py:115} INFO - [2022-09-17 14:21:30,439] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:21:30,444] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:21:30,460] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.026 seconds
+[2022-09-17 14:21:33,454] {processor.py:153} INFO - Started process (PID=778) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:21:33,454] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:21:33,455] {logging_mixin.py:115} INFO - [2022-09-17 14:21:33,455] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:21:33,458] {logging_mixin.py:115} INFO - [2022-09-17 14:21:33,456] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 11
+    download_a = BashOperator(
+             ^
+IndentationError: expected an indented block
+[2022-09-17 14:21:33,458] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:21:33,505] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.055 seconds
+[2022-09-17 14:21:50,812] {processor.py:153} INFO - Started process (PID=790) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:21:50,820] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:21:50,821] {logging_mixin.py:115} INFO - [2022-09-17 14:21:50,821] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:21:50,825] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:21:50,860] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.067 seconds
+[2022-09-17 14:21:53,913] {processor.py:153} INFO - Started process (PID=801) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:21:53,913] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:21:53,914] {logging_mixin.py:115} INFO - [2022-09-17 14:21:53,913] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:21:53,924] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:21:53,947] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.051 seconds
+[2022-09-17 14:21:56,974] {processor.py:153} INFO - Started process (PID=803) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:21:56,975] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:21:56,976] {logging_mixin.py:115} INFO - [2022-09-17 14:21:56,976] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:21:56,980] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:21:57,003] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.032 seconds
+[2022-09-17 14:22:00,993] {processor.py:153} INFO - Started process (PID=804) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:00,993] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:22:00,994] {logging_mixin.py:115} INFO - [2022-09-17 14:22:00,994] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:00,996] {logging_mixin.py:115} INFO - [2022-09-17 14:22:00,995] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 16
+    download_b = BashOperator(
+    ^
+IndentationError: unexpected indent
+[2022-09-17 14:22:00,996] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:01,025] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.036 seconds
+[2022-09-17 14:22:02,076] {processor.py:153} INFO - Started process (PID=805) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:02,077] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:22:02,089] {logging_mixin.py:115} INFO - [2022-09-17 14:22:02,078] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:02,094] {logging_mixin.py:115} INFO - [2022-09-17 14:22:02,092] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 16
+    download_b = BashOperator(
+                             ^
+IndentationError: unindent does not match any outer indentation level
+[2022-09-17 14:22:02,109] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:02,223] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.151 seconds
+[2022-09-17 14:22:04,262] {processor.py:153} INFO - Started process (PID=814) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:04,262] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:22:04,263] {logging_mixin.py:115} INFO - [2022-09-17 14:22:04,263] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:04,267] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:04,284] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.026 seconds
+[2022-09-17 14:22:06,267] {processor.py:153} INFO - Started process (PID=815) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:06,268] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:22:06,268] {logging_mixin.py:115} INFO - [2022-09-17 14:22:06,268] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:06,273] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:06,289] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.025 seconds
+[2022-09-17 14:22:09,307] {processor.py:153} INFO - Started process (PID=816) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:09,307] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:22:09,308] {logging_mixin.py:115} INFO - [2022-09-17 14:22:09,308] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:09,322] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:09,401] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.120 seconds
+[2022-09-17 14:22:11,317] {processor.py:153} INFO - Started process (PID=817) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:11,317] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:22:11,318] {logging_mixin.py:115} INFO - [2022-09-17 14:22:11,318] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:11,322] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:11,344] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.031 seconds
+[2022-09-17 14:22:13,327] {processor.py:153} INFO - Started process (PID=818) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:13,328] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:22:13,328] {logging_mixin.py:115} INFO - [2022-09-17 14:22:13,328] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:13,332] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:13,369] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.046 seconds
+[2022-09-17 14:22:17,405] {processor.py:153} INFO - Started process (PID=827) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:17,406] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:22:17,406] {logging_mixin.py:115} INFO - [2022-09-17 14:22:17,406] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:17,409] {logging_mixin.py:115} INFO - [2022-09-17 14:22:17,408] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 21
+    download_c = BashOperator(
+    ^
+IndentationError: unexpected indent
+[2022-09-17 14:22:17,409] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:17,432] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.032 seconds
+[2022-09-17 14:22:20,418] {processor.py:153} INFO - Started process (PID=828) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:20,418] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:22:20,419] {logging_mixin.py:115} INFO - [2022-09-17 14:22:20,419] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:20,421] {logging_mixin.py:115} INFO - [2022-09-17 14:22:20,420] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 21
+    download_c = BashOperator(
+    ^
+IndentationError: unexpected indent
+[2022-09-17 14:22:20,421] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:20,448] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.035 seconds
+[2022-09-17 14:22:26,321] {processor.py:153} INFO - Started process (PID=833) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:26,322] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:22:26,324] {logging_mixin.py:115} INFO - [2022-09-17 14:22:26,324] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:26,330] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:26,350] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.041 seconds
+[2022-09-17 14:22:39,407] {processor.py:153} INFO - Started process (PID=849) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:39,409] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:22:39,410] {logging_mixin.py:115} INFO - [2022-09-17 14:22:39,410] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:39,412] {logging_mixin.py:115} INFO - [2022-09-17 14:22:39,411] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/subdags/subdags_download.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/subdags/subdags_download.py", line 11
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-09-17 14:22:39,412] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:39,503] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.112 seconds
+[2022-09-17 14:22:41,453] {processor.py:153} INFO - Started process (PID=852) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:41,462] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:22:41,464] {logging_mixin.py:115} INFO - [2022-09-17 14:22:41,463] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:41,476] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:41,516] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.072 seconds
+[2022-09-17 14:22:44,451] {processor.py:153} INFO - Started process (PID=853) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:44,451] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:22:44,452] {logging_mixin.py:115} INFO - [2022-09-17 14:22:44,452] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:44,458] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:44,477] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.030 seconds
+[2022-09-17 14:22:50,476] {processor.py:153} INFO - Started process (PID=854) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:50,477] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:22:50,477] {logging_mixin.py:115} INFO - [2022-09-17 14:22:50,477] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:50,481] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:50,501] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.028 seconds
+[2022-09-17 14:22:54,784] {processor.py:153} INFO - Started process (PID=866) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:54,786] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:22:54,787] {logging_mixin.py:115} INFO - [2022-09-17 14:22:54,787] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:54,794] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:22:54,836] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.063 seconds
+[2022-09-17 14:23:02,892] {processor.py:153} INFO - Started process (PID=868) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:23:02,893] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:23:02,893] {logging_mixin.py:115} INFO - [2022-09-17 14:23:02,893] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:23:02,900] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:23:02,919] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.030 seconds
+[2022-09-17 14:23:08,942] {processor.py:153} INFO - Started process (PID=877) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:23:08,943] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:23:08,943] {logging_mixin.py:115} INFO - [2022-09-17 14:23:08,943] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:23:08,958] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:23:09,005] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.067 seconds
+[2022-09-17 14:23:10,960] {processor.py:153} INFO - Started process (PID=878) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:23:10,961] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:23:10,962] {logging_mixin.py:115} INFO - [2022-09-17 14:23:10,962] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:23:10,967] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:23:10,984] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.027 seconds
+[2022-09-17 14:23:13,971] {processor.py:153} INFO - Started process (PID=879) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:23:13,971] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:23:13,972] {logging_mixin.py:115} INFO - [2022-09-17 14:23:13,972] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:23:13,976] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:23:13,993] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.026 seconds
+[2022-09-17 14:23:44,390] {processor.py:153} INFO - Started process (PID=911) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:23:44,391] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:23:44,392] {logging_mixin.py:115} INFO - [2022-09-17 14:23:44,392] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:23:44,396] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:23:44,412] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.024 seconds
+[2022-09-17 14:24:14,675] {processor.py:153} INFO - Started process (PID=938) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:24:14,675] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:24:14,676] {logging_mixin.py:115} INFO - [2022-09-17 14:24:14,676] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:24:14,680] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:24:14,697] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.026 seconds
+[2022-09-17 14:24:44,953] {processor.py:153} INFO - Started process (PID=973) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:24:44,954] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:24:44,955] {logging_mixin.py:115} INFO - [2022-09-17 14:24:44,955] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:24:44,959] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:24:44,982] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.032 seconds
+[2022-09-17 14:25:15,888] {processor.py:153} INFO - Started process (PID=1006) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:25:15,889] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:25:15,889] {logging_mixin.py:115} INFO - [2022-09-17 14:25:15,889] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:25:15,894] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:25:15,913] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.029 seconds
+[2022-09-17 14:25:46,054] {processor.py:153} INFO - Started process (PID=1030) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:25:46,055] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:25:46,056] {logging_mixin.py:115} INFO - [2022-09-17 14:25:46,056] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:25:46,060] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:25:46,077] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.026 seconds
+[2022-09-17 14:26:16,707] {processor.py:153} INFO - Started process (PID=1065) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:26:16,707] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:26:16,708] {logging_mixin.py:115} INFO - [2022-09-17 14:26:16,708] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:26:16,712] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:26:16,732] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.043 seconds
+[2022-09-17 14:26:46,985] {processor.py:153} INFO - Started process (PID=1089) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:26:46,986] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:26:46,986] {logging_mixin.py:115} INFO - [2022-09-17 14:26:46,986] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:26:46,990] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:26:47,008] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.027 seconds
+[2022-09-17 14:27:17,588] {processor.py:153} INFO - Started process (PID=1121) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:27:17,591] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:27:17,591] {logging_mixin.py:115} INFO - [2022-09-17 14:27:17,591] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:27:17,595] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:27:17,619] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.036 seconds
+[2022-09-17 14:27:48,196] {processor.py:153} INFO - Started process (PID=1153) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:27:48,196] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:27:48,197] {logging_mixin.py:115} INFO - [2022-09-17 14:27:48,197] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:27:48,201] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:27:48,225] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.032 seconds
+[2022-09-17 14:28:18,271] {processor.py:153} INFO - Started process (PID=1176) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:28:18,279] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:28:18,280] {logging_mixin.py:115} INFO - [2022-09-17 14:28:18,280] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:28:18,285] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:28:18,323] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.056 seconds
+[2022-09-17 14:28:48,610] {processor.py:153} INFO - Started process (PID=1208) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:28:48,611] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:28:48,613] {logging_mixin.py:115} INFO - [2022-09-17 14:28:48,613] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:28:48,618] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:28:48,635] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.029 seconds
+[2022-09-17 14:29:18,866] {processor.py:153} INFO - Started process (PID=1231) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:29:18,870] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:29:18,871] {logging_mixin.py:115} INFO - [2022-09-17 14:29:18,871] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:29:18,879] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:29:18,917] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.055 seconds
+[2022-09-17 14:29:49,127] {processor.py:153} INFO - Started process (PID=1266) to work on /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:29:49,128] {processor.py:641} INFO - Processing file /opt/airflow/dags/subdags/subdags_download.py for tasks to queue
+[2022-09-17 14:29:49,129] {logging_mixin.py:115} INFO - [2022-09-17 14:29:49,128] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:29:49,132] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/subdags/subdags_download.py
+[2022-09-17 14:29:49,149] {processor.py:161} INFO - Processing /opt/airflow/dags/subdags/subdags_download.py took 0.028 seconds
