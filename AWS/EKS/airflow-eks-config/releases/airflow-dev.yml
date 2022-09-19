@@ -33,8 +33,8 @@ spec:
         enabled: false
       gitSync:
         enabled: true 
-        repo: https://github.com/php1301/WeatherForecastDataPipeline.git
+        repo: https://github.com/marclamberti/airflow-dags.git
         branch: master
         maxFailures: 0
-        subPath: "Airflow/dags"
+        subPath: ""
         wait: 60
