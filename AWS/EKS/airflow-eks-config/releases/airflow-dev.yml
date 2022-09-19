@@ -28,15 +28,18 @@ spec:
         value: "50000"
       - name: "AIRFLOW__CORE__LOAD_EXAMPLES"
         value: "False"
+      # - name: "AIRFLOW__CORE__DAGS_FOLDER"
+      #   value: "/opt/airflow/dags"
     executor: "KubernetesExecutor"
     dags:
       persistence:
         enabled: false
       gitSync:
         enabled: true 
-        repo: git@github.com:php1301/WeatherForecastDataPipeline.git
+         # repo: git@github.com:php1301/WeatherForecastDataPipeline.git
+        repo: https://github.com/php1301/WeatherForecastDataPipeline.git
         branch: master
         maxFailures: 0
         subPath: "Airflow/dags"
-        sshKeySecret: airflow-git-private-dags
+        # sshKeySecret: airflow-git-private-dags
         wait: 60
