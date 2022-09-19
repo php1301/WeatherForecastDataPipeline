@@ -12,8 +12,10 @@ spec:
     name: airflow
     version: 1.0.0
   values:
-    images.airflow.repository: "358718373286.dkr.ecr.us-east-1.amazonaws.com/wfdp-docker-eks-dev:latest"
-    images.airflow.tag: "ca388689"
+    images:
+      airflow:
+        repository: "358718373286.dkr.ecr.us-east-1.amazonaws.com/wfdp-docker-eks-dev:latest"
+        tag: "ca388689"
     # use to encrypt connection of airflow to Database
     fernetKey: "zTxhk7FuGqQVPZVoukLn5bGWOrgHzhQnBnaqAItcZGI="
     defaultAirflowTag: "1.10.10-2-python3.7"
