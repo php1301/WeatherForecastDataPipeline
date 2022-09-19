@@ -14,7 +14,7 @@ spec:
   values:
     images:
       airflow:
-        repository: "358718373286.dkr.ecr.us-east-1.amazonaws.com/wfdp-docker-eks-dev:latest"
+        repository: "358718373286.dkr.ecr.us-east-1.amazonaws.com/wfdp-docker-eks-dev"
         tag: "ca388689"
     # use to encrypt connection of airflow to Database
     fernetKey: "zTxhk7FuGqQVPZVoukLn5bGWOrgHzhQnBnaqAItcZGI="
