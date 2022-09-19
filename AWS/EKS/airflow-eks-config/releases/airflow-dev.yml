@@ -27,6 +27,8 @@ spec:
         value: "50000"
       - name: "AIRFLOW__CORE__LOAD_EXAMPLES"
         value: "False"
+      - name: "AIRFLOW__CORE__DAGS_FOLDER"
+        value: "/opt/airflow/dags"
     executor: "KubernetesExecutor"
     dags:
       persistence:
