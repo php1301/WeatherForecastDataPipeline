@@ -12,12 +12,14 @@ spec:
     name: airflow
     version: 1.0.0
   values:
+    images.airflow.repository: "358718373286.dkr.ecr.us-east-1.amazonaws.com/wfdp-docker-eks-dev:latest"
+    images.airflow.tag: "ca388689"
     # use to encrypt connection of airflow to Database
     fernetKey: "zTxhk7FuGqQVPZVoukLn5bGWOrgHzhQnBnaqAItcZGI="
     defaultAirflowTag: "1.10.10-2-python3.7"
     env:
       - name: "AIRFLOW__KUBERNETES__DAGS_IN_IMAGE"
-        value: "False"
+        value: "True"
       - name: "AIRFLOW__KUBERNETES__NAMESPACE"
         value: "dev"
       - name: "AIRFLOW__KUBERNETES__WORKER_CONTAINER_REPOSITORY"
@@ -31,19 +33,3 @@ spec:
       # - name: "AIRFLOW__CORE__DAGS_FOLDER"
       #   value: "/opt/airflow/dags"
     executor: "KubernetesExecutor"
-    dags:
-    # Git-sync won't work with persistence enabled
-      persistence:
-        enabled: true
-        size: 512Mi
-        storageClassName: aws-efs
-        existingClaim: efs-storage-claim
-      gitSync:
-        enabled: true 
-         # repo: git@github.com:php1301/WeatherForecastDataPipeline.git
-        repo: https://github.com/php1301/WeatherForecastDataPipeline.git
-        branch: master
-        maxFailures: 0
-        subPath: "Airflow/dags"
-        # sshKeySecret: airflow-git-private-dags
-        wait: 60
