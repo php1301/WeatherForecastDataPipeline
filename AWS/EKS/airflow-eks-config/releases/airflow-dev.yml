@@ -32,8 +32,12 @@ spec:
       #   value: "/opt/airflow/dags"
     executor: "KubernetesExecutor"
     dags:
+    # Git-sync won't work with persistence enabled
       persistence:
-        enabled: false
+        enabled: true
+        size: 512Mi
+        storageClassName: aws-efs
+        existingClaim: efs-storage-claim
       gitSync:
         enabled: true 
          # repo: git@github.com:php1301/WeatherForecastDataPipeline.git
