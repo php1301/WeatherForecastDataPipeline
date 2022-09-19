@@ -8,7 +8,7 @@ metadata:
 spec:
   releaseName: airflow-dev
   chart:
-    repository: https://github.com/marclamberti/airflow-eks-helm-chart/tree/master/airflow
+    repository: https://marclamberti.github.io/airflow-eks-helm-chart
     name: airflow
     version: 1.0.0
   values:
@@ -22,7 +22,7 @@ spec:
       - name: "AIRFLOW__KUBERNETES__WORKER_CONTAINER_REPOSITORY"
         value: "apache/airflow"
       - name: "AIRFLOW__KUBERNETES__WORKER_CONTAINER_TAG"
-        value: "1.10.10.1-alpha2-python3.7"
+        value: "latest"
       - name: "AIRFLOW__KUBERNETES__RUN_AS_USER"
         value: "50000"  
       - name: "AIRFLOW__CORE__LOAD_EXAMPLES"
