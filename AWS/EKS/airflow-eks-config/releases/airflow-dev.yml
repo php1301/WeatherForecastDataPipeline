@@ -14,6 +14,7 @@ spec:
   values:
     # use to encrypt connection of airflow to Database
     fernetKey: "zTxhk7FuGqQVPZVoukLn5bGWOrgHzhQnBnaqAItcZGI="
+    defaultAirflowTag: "1.10.10-2-python3.7"
     env:
       - name: "AIRFLOW__KUBERNETES__DAGS_IN_IMAGE"
         value: "False"
