@@ -32,6 +32,12 @@ spec:
         value: "50000"
       - name: "AIRFLOW__CORE__LOAD_EXAMPLES"
         value: "False"
+      - name: "AIRFLOW__WEBSERVER__BASE_URL"
+        value: "http://localhost:8080/airflow-dev"
       # - name: "AIRFLOW__CORE__DAGS_FOLDER"
       #   value: "/opt/airflow/dags"
     executor: "KubernetesExecutor"
+    ingress:
+        enabled: true
+        web:
+          path: "airflow-dev"    
