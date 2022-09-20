@@ -25,7 +25,7 @@ spec:
           args:
             # Limit the namespace where this ALB Ingress Controller deployment will
             # resolve ingress resources. If left commented, all namespaces are used.
-            - --watch-namespace=dev
+            - --watch-namespace=
 
             # Setting the ingress-class flag below ensures that only ingress resources with the
             # annotation kubernetes.io/ingress.class: "alb" are respected by the controller. You may
