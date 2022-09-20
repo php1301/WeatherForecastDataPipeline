@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: airflow-elb-web
+  namespace: dev
+  labels:
+    component: webserver
+    release: airflow-dev
+  annotations:
+spec:
+  selector:
+    component: webserver
+    release: airflow-dev
+  ports:
+    - name: web
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+  type: LoadBalancer
