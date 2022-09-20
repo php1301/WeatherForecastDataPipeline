@@ -6,8 +6,6 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
-    kubernetes.io/cluster/airflow: shared
-    kubernetes.io/role/internal-elb: 1 
   labels:
     app: airflow-ingress
 spec:
