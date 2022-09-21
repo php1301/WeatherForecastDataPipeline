@@ -1,19 +1,19 @@
-apiVersion: extensions/v1beta1
-kind: Ingress
-metadata:
-  name: airflow-ingress
-  namespace: dev
-  annotations:
-    kubernetes.io/ingress.class: alb
-    alb.ingress.kubernetes.io/scheme: internet-facing
-    external-dns.alpha.kubernetes.io/hostname: php1301-airflow.link
-  labels:
-    app: airflow-ingress
-spec:
-  rules:
-    - http:
-        paths:
-          - path: /airflow-dev/*
-            backend:
-              serviceName: airflow-webserver
-              servicePort: 8080
+# apiVersion: extensions/v1beta1
+# kind: Ingress
+# metadata:
+#   name: airflow-ingress
+#   namespace: dev
+#   annotations:
+#     kubernetes.io/ingress.class: alb
+#     alb.ingress.kubernetes.io/scheme: internet-facing
+#     external-dns.alpha.kubernetes.io/hostname: php1301-airflow.link
+#   labels:
+#     app: airflow-ingress
+# spec:
+#   rules:
+#     - http:
+#         paths:
+#           - path: /airflow-dev/*
+#             backend:
+#               serviceName: airflow-webserver
+#               servicePort: 8080
