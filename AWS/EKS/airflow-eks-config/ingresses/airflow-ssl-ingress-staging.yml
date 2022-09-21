@@ -2,11 +2,11 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: airflow-ingress
-  namespace: dev
+  namespace: staging
   annotations:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
-    external-dns.alpha.kubernetes.io/hostname: dev.php1301-airflow.link
+    external-dns.alpha.kubernetes.io/hostname: staging.php1301-airflow.link
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:358718373286:certificate/45f63829-a37e-475c-b4d9-834cb859b751
     alb.ingress.kubernetes.io/backend-protocol: HTTPS
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
