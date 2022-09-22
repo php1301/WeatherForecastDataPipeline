@@ -46,24 +46,23 @@ spec:
         # web:
         #   path: "airflow-dev"    
     webserver:
-        livenessProbe:
-          httpGet:
-            port: 8080
-            scheme: "HTTPS"
-          initialDelaySeconds: 15
-          timeoutSeconds: 30
-          failureThreshold: 20
-          periodSeconds: 5
-          scheme: "HTTPS"
-        readinessProbe:
-          httpGet:
-            port: 8080
-            scheme: "HTTPS"
-          initialDelaySeconds: 15
-          timeoutSeconds: 30
-          failureThreshold: 20
-          periodSeconds: 5
-          scheme: "HTTPS"
+        extraContainers:
+          - livenessProbe:
+              httpGet:
+                port: 8080
+                scheme: "HTTPS"
+              initialDelaySeconds: 15
+              timeoutSeconds: 30
+              failureThreshold: 20
+              periodSeconds: 5
+            readinessProbe:
+              httpGet:
+                port: 8080
+                scheme: "HTTPS"
+              initialDelaySeconds: 15
+              timeoutSeconds: 30
+              failureThreshold: 20
+              periodSeconds: 5
         extraVolumes:
           - name: "certs"
             secret: 
