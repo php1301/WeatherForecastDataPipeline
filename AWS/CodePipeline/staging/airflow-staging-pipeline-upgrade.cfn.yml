@@ -126,7 +126,7 @@ Resources:
                 - docker tag "${REPOSITORY_URI}:latest" "${REPOSITORY_URI}:${TAG}"
                 - echo "Testing..."
                 - docker-compose up -d
-                - sleep 10
+                - sleep 20
                 - docker ps
                 - docker-compose exec -T airflow-scheduler bash -c "pytest -p no:warnings integrationtests"
             post_build:
