@@ -6,7 +6,7 @@ Description: CFN Template to deploy CodePipeline to build Docker Image and push 
 Parameters:
   EksClusterName:
     Type: String
-    Description: The name of the EKS cluster created
+    Description: The name of the EKS cluster created.
     Default: eks-cluster
     MinLength: 1
     MaxLength: 100
@@ -116,7 +116,7 @@ Resources:
                 - echo "Starting docker daemon..."
                 - nohup /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://127.0.0.1:2375 --storage-driver=overlay2&
                 - timeout 15 sh -c "until docker info; do echo .; sleep 1; done"
-                - echo "Logging into Amazon ECR..."
+                - echo "Logging into Amazon ECR...."
                 - aws ecr get-login-password --region ${AWS_DEFAULT_REGION} | docker login --username AWS --password-stdin $REPOSITORY_URI
                 - TAG="$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | head -c 8)"
             build:
@@ -159,7 +159,7 @@ Resources:
       RoleArn: !Sub arn:aws:iam::${AWS::AccountId}:role/AirflowCodePipelineServiceRole
       ArtifactStore:
         Type: S3
-        Location: !Sub airflow-staging-codepipeline-artifacts
+        Location: !Sub php1301-airflow-staging-codepipeline-artifacts
       Stages:
         - Name: Source
           Actions:
