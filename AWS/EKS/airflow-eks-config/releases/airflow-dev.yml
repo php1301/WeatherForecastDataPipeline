@@ -32,8 +32,8 @@ spec:
         value: "50000"
       - name: "AIRFLOW__CORE__LOAD_EXAMPLES"
         value: "False"
-      # - name: "AIRFLOW__WEBSERVER__BASE_URL"
-      #   value: "http://localhost:8080/airflow-dev"
+      - name: "AIRFLOW__WEBSERVER__BASE_URL"
+        value: "https://dev.php1301-airflow.link"
       - name: "AIRFLOW__WEBSERVER__WEB_SERVER_SSL_CERT"
         value: "/opt/airflow/certs/tls.crt"
       - name: "AIRFLOW__WEBSERVER__WEB_SERVER_SSL_KEY"
@@ -43,8 +43,21 @@ spec:
     executor: "KubernetesExecutor"
     ingress:
         enabled: true
-        # web:
-        #   path: "airflow-dev"    
+        web:
+          precedingPaths:
+            - path: "/*"
+              serviceName: "ssl-redirect"
+              servicePort: "use-annotation"
+          path: "/*"
+          annotations:
+            external-dns.alpha.kubernetes.io/hostname: dev.php1301-airflow.link
+            kubernetes.io/ingress.class: alb
+            alb.ingress.kubernetes.io/scheme: internal
+            alb.ingress.kubernetes.io/target-type: ip
+            alb.ingress.kubernetes.io/target-group-attributes: stickiness.enabled=true,stickiness.lb_cookie.duration_seconds=3600
+            alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:358718373286:certificate/45f63829-a37e-475c-b4d9-834cb859b751
+            alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
+            alb.ingress.kubernetes.io/actions.ssl-redirect: '{"Type": "redirect", "RedirectConfig": { "Protocol": "HTTPS", "Port": "443", "StatusCode": "HTTP_301"}}'    
     webserver:
         # livenessProbe:
         #   initialDelaySeconds: 30
