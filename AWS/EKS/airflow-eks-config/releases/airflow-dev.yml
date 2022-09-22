@@ -47,7 +47,8 @@ spec:
         #   path: "airflow-dev"    
     webserver:
         extraContainers:
-          - livenessProbe:
+          - name: airflow-dev-extra
+            livenessProbe:
               httpGet:
                 port: 8080
                 scheme: "HTTPS"
