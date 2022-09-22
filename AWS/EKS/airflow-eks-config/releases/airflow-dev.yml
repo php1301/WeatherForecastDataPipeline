@@ -46,17 +46,17 @@ spec:
         # web:
         #   path: "airflow-dev"    
     webserver:
-        livenessProbe:
-          initialDelaySeconds: 30
-          timeoutSeconds: 30
-          failureThreshold: 20
-          periodSeconds: 5
-          # scheme: "HTTPS"
-        readinessProbe: 
-          initialDelaySeconds: 30
-          timeoutSeconds: 30
-          failureThreshold: 20
-          periodSeconds: 5
+        # livenessProbe:
+        #   initialDelaySeconds: 30
+        #   timeoutSeconds: 30
+        #   failureThreshold: 20
+        #   periodSeconds: 5
+        #   # scheme: "HTTPS"
+        # readinessProbe: 
+        #   initialDelaySeconds: 30
+        #   timeoutSeconds: 30
+        #   failureThreshold: 20
+        #   periodSeconds: 5
           # scheme: "HTTPS"
         extraVolumes:
           - name: "certs"
