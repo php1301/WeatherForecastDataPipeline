@@ -46,6 +46,7 @@ spec:
         web:
           precedingPaths:
             - path: "/*"
+              pathType: "ImplementationSpecific"
               serviceName: "ssl-redirect"
               servicePort: "use-annotation"
           path: "/*"
