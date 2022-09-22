@@ -8,17 +8,17 @@ metadata:
 spec:
   releaseName: airflow-dev
   chart:
-    repository: https://marclamberti.github.io/airflow-eks-helm-chart
+    repository: https://airflow.apache.org
     name: airflow
     version: 1.0.0
   values:
     images:
       airflow:
         repository: "358718373286.dkr.ecr.us-east-1.amazonaws.com/wfdp-docker-eks-dev"
-        tag: "ca388689"
+        tag: "f7cfb217"
     # use to encrypt connection of airflow to Database
     fernetKey: "zTxhk7FuGqQVPZVoukLn5bGWOrgHzhQnBnaqAItcZGI="
-    defaultAirflowTag: "1.10.10-2-python3.7"
+    defaultAirflowTag: "2.3.3-python3.7"
     env:
       - name: "AIRFLOW__KUBERNETES__DAGS_IN_IMAGE"
         value: "True"
@@ -27,7 +27,7 @@ spec:
       - name: "AIRFLOW__KUBERNETES__WORKER_CONTAINER_REPOSITORY"
         value: "apache/airflow"
       - name: "AIRFLOW__KUBERNETES__WORKER_CONTAINER_TAG"
-        value: "1.10.10-2-python3.7"
+        value: "2.3.3-python3.7"
       - name: "AIRFLOW__KUBERNETES__RUN_AS_USER"
         value: "50000"
       - name: "AIRFLOW__CORE__LOAD_EXAMPLES"
