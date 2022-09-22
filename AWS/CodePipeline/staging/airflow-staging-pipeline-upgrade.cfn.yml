@@ -128,7 +128,7 @@ Resources:
                 - docker-compose up -d
                 - sleep 10
                 - docker ps
-                - docker-compose exec -T src_airflow-scheduler_1 bash -c "pytest -p no:warnings integrationtests"
+                - docker-compose exec -T airflow-scheduler bash -c "pytest -p no:warnings integrationtests"
             post_build:
               commands:
                 - echo Build completed on `date`

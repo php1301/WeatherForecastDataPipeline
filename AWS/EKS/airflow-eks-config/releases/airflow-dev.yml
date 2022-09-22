@@ -10,12 +10,12 @@ spec:
   chart:
     repository: https://airflow.apache.org
     name: airflow
-    version: 1.0.0
+    version: 1.6.0
   values:
     images:
       airflow:
         repository: "358718373286.dkr.ecr.us-east-1.amazonaws.com/wfdp-docker-eks-dev"
-        tag: "f7cfb217"
+        tag: "a929ee89"
     # use to encrypt connection of airflow to Database
     fernetKey: "zTxhk7FuGqQVPZVoukLn5bGWOrgHzhQnBnaqAItcZGI="
     defaultAirflowTag: "2.3.3-python3.7"
@@ -51,13 +51,13 @@ spec:
           timeoutSeconds: 30
           failureThreshold: 20
           periodSeconds: 5
-          # scheme: "HTTPS"
+          scheme: "HTTPS"
         readinessProbe: 
           initialDelaySeconds: 15
           timeoutSeconds: 30
           failureThreshold: 20
           periodSeconds: 5
-          # scheme: "HTTPS"
+          scheme: "HTTPS"
         extraVolumes:
           - name: "certs"
             secret: 
