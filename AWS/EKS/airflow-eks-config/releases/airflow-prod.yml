@@ -70,6 +70,7 @@ spec:
         # web:
         #   path: "airflow-prod"    
     webserver:
+        replicas: 3
         livenessProbe:
           scheme: "HTTPS"
         readinessProbe: 
