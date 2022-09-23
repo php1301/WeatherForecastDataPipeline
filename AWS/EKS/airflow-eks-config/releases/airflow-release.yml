@@ -14,4 +14,4 @@ spec:
     version: 1.6.0
   valuesFrom:
     - chartFileRef:
-        path: ../charts/airflow-dev-values.yaml
+        path: irflow-dev-values.yaml
