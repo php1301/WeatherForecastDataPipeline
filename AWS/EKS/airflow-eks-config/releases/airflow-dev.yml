@@ -43,14 +43,28 @@ spec:
       - name: "AIRFLOW__CORE__REMOTE_LOGGING"
         value: "True"
       - name: "AIRFLOW__CORE__REMOTE_LOG_CONN_ID"
-        value: "aws_s3_log_storage"
+        value: "aws_s3_sm"
       - name: "AIRFLOW__CORE__REMOTE_BASE_LOG_FOLDER"
         value: "s3://php1301-airflow-eks-logs/dev/"
-      - name: "AIRFLOW_CONN_AWS_S3_LOG_STORAGE"
-        value: "s3://?aws_access_key_id=AKIAVHBKH7WTLYWPIPMC&aws_secret_access_key=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"
+      # - name: "AIRFLOW_CONN_AWS_S3_LOG_STORAGE"
+      #   value: ""
       # - name: "AIRFLOW__CORE__DAGS_FOLDER"
       #   value: "/opt/airflow/dags"
+      - name: "AIRFLOW__SECRETS__BACKEND"
+        value: "airflow.contrib.secrets.aws_secrets_manager.SecretsManagerBackend"
+      - name: "AIRFLOW__SECRETS__BACKEND_KWARGS"
+        value: "{'connection_prefix': 'airflow/connections'}    
     executor: "KubernetesExecutor"
+    secret:
+      - envName: "AWS_DEFAULT_REGION"
+        secretName: "airflow-sm"
+        secretKey: "aws-default-region"
+      - envName: "AWS_ACCESS_KEY_ID"
+        secretName: "airflow-sm"
+        secretKey: "aws-access-key-id"
+      - envName: "AWS_SECRET_ACCESS_KEY"
+        secretName: "airflow-sm"
+        secretKey: "aws-secret-access-key"
     ingress:
         enabled: true
         # web:
