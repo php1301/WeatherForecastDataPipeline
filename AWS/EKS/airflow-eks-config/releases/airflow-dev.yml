@@ -40,6 +40,14 @@ spec:
         value: "/opt/airflow/certs/tls.key"    
       - name: "AIRFLOW__KUBERNETES__LOGS_VOLUME_CLAIM"
         value: "airflow-dev-logs"
+      - name: "AIRFLOW__CORE__REMOTE_LOGGING"
+        value: "True"
+      - name: "AIRFLOW__CORE__REMOTE_LOG_CONN_ID"
+        value: "aws_s3_log_storage"
+      - name: "AIRFLOW_CORE__REMOTE_BASE_LOG_FOLDER"
+        value: "s3://php1301-airflow-eks-logs/dev"
+      - name: "AIRFLOW_CONN_AWS_S3_LOG_STORAGE"
+        value: "s3://?aws_access_key_id=AKIAVHBKH7WTLYWPIPMC&aws_secret_access_key=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"
       # - name: "AIRFLOW__CORE__DAGS_FOLDER"
       #   value: "/opt/airflow/dags"
     executor: "KubernetesExecutor"
@@ -56,12 +64,12 @@ spec:
           - name: "certs"
             secret: 
               secretName: "airflow-ssl"
-          - name: "logs"
-            persistentVolumeClaim:
-              claimName: "airflow-dev-logs"
+          # - name: "logs"
+          #   persistentVolumeClaim:
+          #     claimName: "airflow-dev-logs"
         extraVolumeMounts:
           - name: "certs"
             mountPath: "opt/airflow/certs"
             readOnly: true
-          - name: "logs"
-            mountPath: "opt/airflow/logs"    
+          # - name: "logs"
+          #   mountPath: "opt/airflow/logs"    
