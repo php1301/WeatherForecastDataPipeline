@@ -13,6 +13,9 @@ spec:
     - http:
         paths:
           - path: /*
+            pathType: Prefix
             backend:
-              serviceName: airflow-webserver
-              servicePort: 8080
+              service:
+                name: airflow-webserver
+                port:
+                  number: 8080
