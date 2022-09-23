@@ -16,6 +16,7 @@ helm repo add fluxcd https://charts.fluxcd.io
 
 helm upgrade -i flux fluxcd/flux \
 --set git.url=git@github.com:php1301/WeatherForecastDataPipeline \
+--set git.branch=backupAirflowNew \
 --set git.path="AWS/EKS/airflow-eks-config" \
 --namespace flux
 
