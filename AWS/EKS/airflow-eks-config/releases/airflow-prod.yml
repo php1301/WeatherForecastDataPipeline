@@ -54,6 +54,12 @@ spec:
         value: "airflow.contrib.secrets.aws_secrets_manager.SecretsManagerBackend"
       - name: "AIRFLOW__SECRETS__BACKEND_KWARGS"
         value: "{'connection_prefix': 'airflow/connections'}"
+      - name: "AIRFLOW__CORE__STORE_SERIALIZED_DAGS"
+        value: "True"
+      - name: "AIRFLOW__CORE__STORE_DAG_CODE"  
+        value: "True"
+      - name: "AIRFLOW__CORE__MIN_SERIALIZED_DAG_UPDATE_INTERVAL"
+        value: 30
     executor: "KubernetesExecutor"
     secret:
       - envName: "AWS_DEFAULT_REGION"
@@ -69,6 +75,15 @@ spec:
         enabled: true
         # web:
         #   path: "airflow-prod"    
+    # postgresql:
+    #     enabled: false
+    # data:
+    # metadataConnection:
+    #   user: postgres 
+    #   password: postgres
+    #   host: airflow-metastore.cxslrc4doh0f.us-east-1.rds.amazonaws.com
+    #   port: 5432
+    #   db: ~
     webserver:
         replicas: 3
         livenessProbe:
