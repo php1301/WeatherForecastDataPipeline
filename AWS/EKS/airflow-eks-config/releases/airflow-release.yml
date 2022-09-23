@@ -14,4 +14,4 @@ spec:
     version: 1.6.0
   valuesFrom:
     - chartFileRef:
-        path: /home/ec2-user/environment/WeatherForecastDataPipeline/AWS/EKS/airflow-eks-config/charts/airflow-dev-values.yaml
+        path: ../charts/airflow-dev-values.yaml
