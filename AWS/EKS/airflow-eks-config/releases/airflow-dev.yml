@@ -53,7 +53,7 @@ spec:
       - name: "AIRFLOW__SECRETS__BACKEND"
         value: "airflow.contrib.secrets.aws_secrets_manager.SecretsManagerBackend"
       - name: "AIRFLOW__SECRETS__BACKEND_KWARGS"
-        value: "{'connection_prefix': 'airflow/connections'}    
+        value: "{'connection_prefix': 'airflow/connections'}"
     executor: "KubernetesExecutor"
     secret:
       - envName: "AWS_DEFAULT_REGION"
