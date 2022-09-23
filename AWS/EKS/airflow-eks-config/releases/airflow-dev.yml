@@ -38,6 +38,8 @@ spec:
         value: "/opt/airflow/certs/tls.crt"
       - name: "AIRFLOW__WEBSERVER__WEB_SERVER_SSL_KEY"
         value: "/opt/airflow/certs/tls.key"    
+      - name: "AIRFLOW__KUBERNETES__LOGS_VOLUME_CLAIM"
+        value: "airflow-dev-logs"
       # - name: "AIRFLOW__CORE__DAGS_FOLDER"
       #   value: "/opt/airflow/dags"
     executor: "KubernetesExecutor"
@@ -54,7 +56,12 @@ spec:
           - name: "certs"
             secret: 
               secretName: "airflow-ssl"
+          - name: "logs"
+            persistentVolumeClaim:
+              claimName: "airflow-dev-logs"
         extraVolumeMounts:
           - name: "certs"
             mountPath: "opt/airflow/certs"
             readOnly: true
+          - name: "logs"
+            mountPath: "opt/airflow/logs"    

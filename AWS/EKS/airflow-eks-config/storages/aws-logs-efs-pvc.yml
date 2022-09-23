@@ -7,7 +7,7 @@ provisioner: aws.io/aws-efs
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-    name: airflow-dev-log
+    name: airflow-dev-logs
     namespace: dev
     annotations:  
         volume.beta.kubernetes.io/storage-class: "aws-efs"
