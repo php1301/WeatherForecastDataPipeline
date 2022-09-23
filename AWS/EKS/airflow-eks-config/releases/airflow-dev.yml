@@ -1,82 +1,82 @@
-apiVersion: helm.fluxcd.io/v1
-kind: HelmRelease
-metadata:
-  name: airflow
-  namespace: dev
-  annotations:
-    flux.weave.works/automated: "true"
-spec:
-  releaseName: airflow-dev
-  chart:
-    repository: https://airflow.apache.org
-    name: airflow
-    version: 1.6.0
-  values:
-    images:
-      airflow:
-        repository: "358718373286.dkr.ecr.us-east-1.amazonaws.com/wfdp-docker-eks-dev"
-        tag: "a929ee89"
-    # use to encrypt connection of airflow to Database
-    fernetKey: "zTxhk7FuGqQVPZVoukLn5bGWOrgHzhQnBnaqAItcZGI="
-    defaultAirflowTag: "2.3.3-python3.7"
-    env:
-      - name: "AIRFLOW__KUBERNETES__DAGS_IN_IMAGE"
-        value: "True"
-      - name: "AIRFLOW__KUBERNETES__NAMESPACE"
-        value: "dev"
-      - name: "AIRFLOW__KUBERNETES__WORKER_CONTAINER_REPOSITORY"
-        value: "apache/airflow"
-      - name: "AIRFLOW__KUBERNETES__WORKER_CONTAINER_TAG"
-        value: "2.3.3-python3.7"
-      - name: "AIRFLOW__KUBERNETES__RUN_AS_USER"
-        value: "50000"
-      - name: "AIRFLOW__CORE__LOAD_EXAMPLES"
-        value: "False"
-      - name: "AIRFLOW__WEBSERVER__BASE_URL"
-        value: "https://dev.php1301-airflow.link"
-      - name: "AIRFLOW__WEBSERVER__WEB_SERVER_SSL_CERT"
-        value: "/opt/airflow/certs/tls.crt"
-      - name: "AIRFLOW__WEBSERVER__WEB_SERVER_SSL_KEY"
-        value: "/opt/airflow/certs/tls.key"    
-      # - name: "AIRFLOW__CORE__DAGS_FOLDER"
-      #   value: "/opt/airflow/dags"
-    executor: "KubernetesExecutor"
-    ingress:
-        enabled: true
-        web:
-          precedingPaths:
-            - path: "/*"
-              pathType: "ImplementationSpecific"
-              serviceName: "ssl-redirect"
-              servicePort: "use-annotation"
-          path: "/*"
-          annotations:
-            external-dns.alpha.kubernetes.io/hostname: dev.php1301-airflow.link
-            kubernetes.io/ingress.class: alb
-            alb.ingress.kubernetes.io/scheme: internal
-            alb.ingress.kubernetes.io/target-type: ip
-            alb.ingress.kubernetes.io/target-group-attributes: stickiness.enabled=true,stickiness.lb_cookie.duration_seconds=3600
-            alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:358718373286:certificate/45f63829-a37e-475c-b4d9-834cb859b751
-            alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
-            alb.ingress.kubernetes.io/actions.ssl-redirect: '{"Type": "redirect", "RedirectConfig": { "Protocol": "HTTPS", "Port": "443", "StatusCode": "HTTP_301"}}'    
-    webserver:
-        # livenessProbe:
-        #   initialDelaySeconds: 30
-        #   timeoutSeconds: 30
-        #   failureThreshold: 20
-        #   periodSeconds: 5
-        #   # scheme: "HTTPS"
-        # readinessProbe: 
-        #   initialDelaySeconds: 30
-        #   timeoutSeconds: 30
-        #   failureThreshold: 20
-        #   periodSeconds: 5
-          # scheme: "HTTPS"
-        extraVolumes:
-          - name: "certs"
-            secret: 
-              secretName: "airflow-ssl"
-        extraVolumeMounts:
-          - name: "certs"
-            mountPath: "opt/airflow/certs"
-            readOnly: true
+# apiVersion: helm.fluxcd.io/v1
+# kind: HelmRelease
+# metadata:
+#   name: airflow
+#   namespace: dev
+#   annotations:
+#     flux.weave.works/automated: "true"
+# spec:
+#   releaseName: airflow-dev
+#   chart:
+#     repository: https://airflow.apache.org
+#     name: airflow
+#     version: 1.6.0
+#   values:
+#     images:
+#       airflow:
+#         repository: "358718373286.dkr.ecr.us-east-1.amazonaws.com/wfdp-docker-eks-dev"
+#         tag: "a929ee89"
+#     # use to encrypt connection of airflow to Database
+#     fernetKey: "zTxhk7FuGqQVPZVoukLn5bGWOrgHzhQnBnaqAItcZGI="
+#     defaultAirflowTag: "2.3.3-python3.7"
+#     env:
+#       - name: "AIRFLOW__KUBERNETES__DAGS_IN_IMAGE"
+#         value: "True"
+#       - name: "AIRFLOW__KUBERNETES__NAMESPACE"
+#         value: "dev"
+#       - name: "AIRFLOW__KUBERNETES__WORKER_CONTAINER_REPOSITORY"
+#         value: "apache/airflow"
+#       - name: "AIRFLOW__KUBERNETES__WORKER_CONTAINER_TAG"
+#         value: "2.3.3-python3.7"
+#       - name: "AIRFLOW__KUBERNETES__RUN_AS_USER"
+#         value: "50000"
+#       - name: "AIRFLOW__CORE__LOAD_EXAMPLES"
+#         value: "False"
+#       - name: "AIRFLOW__WEBSERVER__BASE_URL"
+#         value: "https://dev.php1301-airflow.link"
+#       - name: "AIRFLOW__WEBSERVER__WEB_SERVER_SSL_CERT"
+#         value: "/opt/airflow/certs/tls.crt"
+#       - name: "AIRFLOW__WEBSERVER__WEB_SERVER_SSL_KEY"
+#         value: "/opt/airflow/certs/tls.key"    
+#       # - name: "AIRFLOW__CORE__DAGS_FOLDER"
+#       #   value: "/opt/airflow/dags"
+#     executor: "KubernetesExecutor"
+#     ingress:
+#         enabled: true
+#         web:
+#           precedingPaths:
+#             - path: "/*"
+#               pathType: "ImplementationSpecific"
+#               serviceName: "ssl-redirect"
+#               servicePort: "use-annotation"
+#           path: "/*"
+#           annotations:
+#             external-dns.alpha.kubernetes.io/hostname: dev.php1301-airflow.link
+#             kubernetes.io/ingress.class: alb
+#             alb.ingress.kubernetes.io/scheme: internal
+#             alb.ingress.kubernetes.io/target-type: ip
+#             alb.ingress.kubernetes.io/target-group-attributes: stickiness.enabled=true,stickiness.lb_cookie.duration_seconds=3600
+#             alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:358718373286:certificate/45f63829-a37e-475c-b4d9-834cb859b751
+#             alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
+#             alb.ingress.kubernetes.io/actions.ssl-redirect: '{"Type": "redirect", "RedirectConfig": { "Protocol": "HTTPS", "Port": "443", "StatusCode": "HTTP_301"}}'    
+#     webserver:
+#         # livenessProbe:
+#         #   initialDelaySeconds: 30
+#         #   timeoutSeconds: 30
+#         #   failureThreshold: 20
+#         #   periodSeconds: 5
+#         #   # scheme: "HTTPS"
+#         # readinessProbe: 
+#         #   initialDelaySeconds: 30
+#         #   timeoutSeconds: 30
+#         #   failureThreshold: 20
+#         #   periodSeconds: 5
+#           # scheme: "HTTPS"
+#         extraVolumes:
+#           - name: "certs"
+#             secret: 
+#               secretName: "airflow-ssl"
+#         extraVolumeMounts:
+#           - name: "certs"
+#             mountPath: "opt/airflow/certs"
+#             readOnly: true
