@@ -1,0 +1,89 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: airflow
+  namespace: prod
+  annotations:
+    flux.weave.works/automated: "true"
+spec:
+  releaseName: airflow-prod
+  chart:
+    repository: https://marclamberti.github.io/airflow-eks-helm-chart
+    name: airflow
+    version: 1.0.0
+  values:
+    images:
+      airflow:
+        repository: "358718373286.dkr.ecr.us-east-1.amazonaws.com/wfdp-docker-eks-prod"
+        tag: "33d2d40f"
+    # use to encrypt connection of airflow to Database
+    fernetKey: "zTxhk7FuGqQVPZVoukLn5bGWOrgHzhQnBnaqAItcZGI="
+    defaultAirflowTag: "1.10.11-python3.7"
+    env:
+      - name: "AIRFLOW__KUBERNETES__DAGS_IN_IMAGE"
+        value: "True"
+      - name: "AIRFLOW__KUBERNETES__NAMESPACE"
+        value: "prod"
+      - name: "AIRFLOW__KUBERNETES__WORKER_CONTAINER_REPOSITORY"
+        value: "apache/airflow"
+      - name: "AIRFLOW__KUBERNETES__WORKER_CONTAINER_TAG"
+        value: "1.10.11-python3.7"
+      - name: "AIRFLOW__KUBERNETES__RUN_AS_USER"
+        value: "50000"
+      - name: "AIRFLOW__CORE__LOAD_EXAMPLES"
+        value: "True"
+      # - name: "AIRFLOW__WEBSERVER__BASE_URL"
+      #   value: "http://localhost:8080/airflow-prod"
+      - name: "AIRFLOW__WEBSERVER__WEB_SERVER_SSL_CERT"
+        value: "/opt/airflow/certs/tls.crt"
+      - name: "AIRFLOW__WEBSERVER__WEB_SERVER_SSL_KEY"
+        value: "/opt/airflow/certs/tls.key"    
+      - name: "AIRFLOW__KUBERNETES__LOGS_VOLUME_CLAIM"
+        value: "airflow-prod-logs"
+      - name: "AIRFLOW__CORE__REMOTE_LOGGING"
+        value: "True"
+      - name: "AIRFLOW__CORE__REMOTE_LOG_CONN_ID"
+        value: "aws_s3_sm"
+      - name: "AIRFLOW__CORE__REMOTE_BASE_LOG_FOLDER"
+        value: "s3://php1301-airflow-eks-logs/prod/"
+      # - name: "AIRFLOW_CONN_AWS_S3_LOG_STORAGE"
+      #   value: ""
+      # - name: "AIRFLOW__CORE__DAGS_FOLDER"
+      #   value: "/opt/airflow/dags"
+      - name: "AIRFLOW__SECRETS__BACKEND"
+        value: "airflow.contrib.secrets.aws_secrets_manager.SecretsManagerBackend"
+      - name: "AIRFLOW__SECRETS__BACKEND_KWARGS"
+        value: "{'connection_prefix': 'airflow/connections'}"
+    executor: "KubernetesExecutor"
+    secret:
+      - envName: "AWS_DEFAULT_REGION"
+        secretName: "airflow-sm"
+        secretKey: "aws-default-region"
+      - envName: "AWS_ACCESS_KEY_ID"
+        secretName: "airflow-sm"
+        secretKey: "aws-access-key-id"
+      - envName: "AWS_SECRET_ACCESS_KEY"
+        secretName: "airflow-sm"
+        secretKey: "aws-secret-access-key"
+    ingress:
+        enabled: true
+        # web:
+        #   path: "airflow-prod"    
+    webserver:
+        livenessProbe:
+          scheme: "HTTPS"
+        readinessProbe: 
+          scheme: "HTTPS"
+        extraVolumes:
+          - name: "certs"
+            secret: 
+              secretName: "airflow-ssl"
+          # - name: "logs"
+          #   persistentVolumeClaim:
+          #     claimName: "airflow-prod-logs"
+        extraVolumeMounts:
+          - name: "certs"
+            mountPath: "opt/airflow/certs"
+            readOnly: true
+          # - name: "logs"
+          #   mountPath: "opt/airflow/logs"    
