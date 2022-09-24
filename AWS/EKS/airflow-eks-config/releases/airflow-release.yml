@@ -1,14 +1,14 @@
-# https://fluxcd.io/legacy/helm-operator/helmrelease-guide/values/
-apiVersion: helm.fluxcd.io/v1
-kind: HelmRelease
-metadata:
-  name: airflow
-  namespace: airflow
-  annotations:
-    flux.weave.works/automated: "true"
-spec:
-  releaseName: airflow-airflow
-  chart:
-    repository: https://airflow.apache.org
-    name: airflow
-    version: 1.6.0
+# # https://fluxcd.io/legacy/helm-operator/helmrelease-guide/values/
+# apiVersion: helm.fluxcd.io/v1
+# kind: HelmRelease
+# metadata:
+#   name: airflow
+#   namespace: airflow
+#   annotations:
+#     flux.weave.works/automated: "true"
+# spec:
+#   releaseName: airflow-airflow
+#   chart:
+#     repository: https://airflow.apache.org
+#     name: airflow
+#     version: 1.6.0
